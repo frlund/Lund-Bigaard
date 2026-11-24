@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bigårdsjournal – Lund Bigaard</title>
+  <meta name="description" content="Journal for inspeksjoner og varroa i bigården. Fungerer uten nett.">
+  <meta name="theme-color" content="#2B2111">
+  <meta name="color-scheme" content="light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Bigårdsjournal">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="db.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <div class="loading">
+      <img src="img/lund-bigaard-logo.png" alt="Lund Bigaard – Naturligvis" width="180" height="138">
+      <p>Laster Bigårdsjournal …</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <div id="update-banner" class="update-banner" hidden>
+    <span>En ny versjon av appen er klar.</span>
+    <button type="button" id="update-btn" class="btn btn-honey btn-small">Oppdater</button>
+  </div>
+
+  <noscript>
+    <p class="noscript">Bigårdsjournal trenger JavaScript for å fungere. Slå på JavaScript i nettleseren.</p>
+  </noscript>
+</body>
+</html>
